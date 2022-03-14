@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플랙스03</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+    
+        * {margin:0;padding:0;box-sizing:border-box;}
+        ul {list-style:none;}
+        a {color:inherit;text-decoration:none;}
+
+        .headerWrap h1{
+            text-align:center;
+            padding:20px 0;
+        }
+        
+        .topBanner {
+            background:#333;
+            color:#fff;
+            font-size:15px;
+            padding:5px 15px;
+            
+
+        }
+        .topBanner .inner {
+            display:flex;
+            justify-content:space-between;
+            width:1200px;
+            margin:0 auto;
+        }
+
+        .topBanner ul {
+            display:flex;
+
+        }
+        .topBanner .left li {
+            margin-right:30px;
+        }
+        .topBanner .right {
+            gap:30px;
+        }
+        .topBanner .right li {
+            position:relative;
+        }
+        .topBanner .right li~li::before {
+            content:"";
+            display:block;
+            width:2px;
+            height:12px;
+            background-color:#ddd;
+            position:absolute;
+            top:50%;
+            left:-15px;
+            transform:translateY(-50%);
+
+        }
+    </style>
+</head>
+<body>
+<div class="Wrap">
+    <header class="headerWrap">
+        <div class="topBanner">
+            <div class="inner">
+                <ul class="left">
+                    <li><a href="#!"><i class="xi-chip-o">KOR</a></i></li>
+                    <li><a href="#!">STORE</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#!">Mo</a></li>
+                    <li><a href="#!">Si</a></li>
+                    <li><a href="#!">Ggaeng</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1>
+            <a href="#!"><img src="../img/BMW_Grey_Logo.svg" alt=""></a>
+        </h1>
+    </header>
+    <main>
+        <section class="mainVisual">
+            
+        </section>
+    </main>
+    <footer class="footerWrap"></footer>
+
+</div>
+
+</body>
+</html>

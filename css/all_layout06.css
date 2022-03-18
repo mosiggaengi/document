@@ -28,12 +28,9 @@
     letter-spacing: -0.025em;
 }
 
-.topBanner .container a {
-    display: inline-block;
-    height: 16px;
-    line-height: 13px;
+.topBanner .container a { 
     margin-left: 20px;
-    padding: 0 20px;
+    padding: 5px 20px;
     border: 1px solid #333;
     font-size: 13px;
     font-weight: 300;
@@ -140,14 +137,63 @@
 }
 
 .mainVisual .mainSlide figure {
+    position:relative;
     height: 600px;
     /* background-repeat:no-repeat;
     background-position-x:center; */
     background: #333;
 }
 
-.mainVisual .mainSlide figure.slick-active {
+.mainVisual .mainSlide figure i {
+    position:absolute;
+    top:100px;
+    right:200px;
+    font-size:100px;
+    color:#fff;
+    opacity:0;
+    transition:0.5s;
 }
+
+.mainVisual .mainSlide figure.oo i {
+    opacity:1;
+    animation:heart 1s infinite;
+}
+
+@keyframes heart {
+    0% {transform:scale(1);}
+    20% {transform:scale(0.5);}
+    50% {transform:scale(1);}
+    70% {transform:scale(0.5);}
+    100% {transform:scale(1);}
+}
+
+.mainVisual .mainSlide .leftArrow {
+    position:absolute;
+    top:50%;
+    left:100px;
+    
+    z-index:999;
+    border-top:100px solid #fff;
+    border-left:100px solid transparent;
+    transform:translateY(-50%) rotate(-135deg);
+}
+
+.mainVisual .mainSlide .leftArrow.oo {
+    border-top:100px solid #333;
+}
+
+
+.mainVisual .mainSlide .rightArrow {
+    position:absolute;
+    top:50%;
+    right:100px;
+    width:100px;
+    height:100px;
+    border-top:1px solid #fff;
+    border-right:1px solid #fff;
+    transform:translateY(-50%) rotate(45deg);
+}
+
 
 .mainVisual .mainSlide figure .inner {
     width:1200px;
@@ -155,6 +201,10 @@
     padding:0 15px;
     color:#fff;
 
+}
+
+.mainVisual .mainSlide figure.itm02 .inner {
+    color:#333;
 }
 
 .mainVisual .mainSlide figure .inner h3 {
@@ -166,6 +216,9 @@
     text-shadow:0 0 2px #333;
     transition:1s 0.5s;
 }
+
+
+
 .mainVisual .mainSlide figure .inner p {
     opacity:0;
     transform:translateY(100px);
@@ -174,12 +227,12 @@
     transition:1s 1s;
 }
 
-.mainVisual .mainSlide figure.slick-active .inner h3 {
+.mainVisual .mainSlide figure.oo .inner h3 {
     opacity:1;
     transform:translateY(0);
 }
 
-.mainVisual .mainSlide figure.slick-active .inner p {
+.mainVisual .mainSlide figure.oo .inner p {
     opacity:1;
     transform:translateY(0);
 }
@@ -236,3 +289,292 @@
 .mainVisual .mainSlide .slick-dots button {
     display:none;
 }
+
+/* mainVisual jeong 2022.03.18 */
+
+
+
+.mainProduct {
+    padding:100px 0;
+    text-align:center;
+}
+
+.mainProduct h2 {
+    font-size:19px;
+    font-weight:100;
+    letter-spacing:0.20em;
+    margin-bottom:10px;
+}
+
+
+.mainProduct P {
+    font-size:15px;
+    font-weight:300;
+    letter-spacing:-0.025em;
+    margin-bottom:30px;
+}
+
+.mainProduct .container {
+    display:flex;
+    width:1200px;
+    margin:0 auto;
+}
+
+.mainProduct .container figure {
+    position:relative;
+    flex:1;
+    padding:0 15px;
+}
+
+
+.mainProduct .container figure .inner {
+    margin-bottom:15px;
+}
+
+.mainProduct .container figure strong {
+    display:block;
+    margin-bottom:10px;
+}
+
+.mainProduct .container figure a {
+    display:inline-block;
+    padding:10px 30px;
+    background:#333;
+    color:#fff;
+}
+
+.mainProduct .container figure a:hover {
+    background:#ddd;
+    color:#333;
+}
+
+.mainProduct .inner {
+    overflow:hidden;
+}
+
+.mainProduct .inner img {
+    transition:0.5s;
+}
+
+.mainProduct .inner:hover img {
+    transform:scale(1.5);
+    
+}
+
+.mainProduct .container figure .label {
+    position:absolute;
+    top:-10px;
+    right:0;
+    border-top:10px solid #f00;
+    border-left:50px solid #f00;
+    border-bottom:10px solid #f00;
+    border-right:10px solid transparent;
+
+}
+
+.mainProduct .container figure .label span {
+    position:absolute;
+    top:-6px;
+    left:-45px;
+    color:#fff;
+
+    font-size:14px;
+}
+
+/* mainProduct jeong 2022 03.18 */
+
+
+.eventBanner {
+    padding:100px 0;
+    background:url(../images/mainvisual01.jpg) no-repeat fixed center center/cover;
+    text-align:center;
+    color:#fff;     
+    filter:grayscale(1);
+}
+
+
+.eventBanner h2 {
+    font-size:19px;
+    font-weight:100;
+    letter-spacing:0.20em;
+    margin-bottom:10px;
+
+}
+
+.eventBanner p {
+    font-size:15px;
+    font-weight:300;
+    letter-spacing:0.025em;
+    margin-bottom:30px;
+}
+
+.eventBanner i {
+    padding:7px;
+    background:#333;
+    border-radius:50%;
+    margin-left:15px;
+}
+
+
+
+
+
+
+.eventProduct {
+    padding:100px 0;
+}
+
+.eventProduct .container {
+    display:flex;
+    width:1200px;
+    margin:0 auto;
+}
+
+.eventProduct .container>div {
+    width:40%;
+    padding:0 15px;
+}
+
+.eventProduct .left {
+    width:40%;
+}
+
+.eventProduct .eProductSlide {
+    padding:5px;
+    border:5px solid #ddd;
+}
+
+
+.eventProduct .right {
+    display:flex;
+    align-items:center;
+
+    width:60%;
+}
+
+
+.eventProduct h3 {
+    font-size:19px;
+    font-weight:100;
+    letter-spacing:0.20em;
+    margin-bottom:10px;
+
+}
+
+.eventProduct p {
+    font-size:15px;
+    font-weight:300;
+    letter-spacing:-0.025em;
+    margin-bottom:30px;
+}
+
+.eventProduct i {
+    padding:13px;
+    background:#333;
+    color:#fff;
+    border-radius:7%;
+    margin-left:15px;
+}
+
+/*  */
+
+
+.allProduct {
+    position:relative;
+    padding:100px 0;
+    text-align:center;
+    background:#f2f2f2;
+}
+
+.allProduct h2 {
+    font-size:19px;
+    font-weight:100;
+    letter-spacing:0.20em;
+    margin-bottom:10px;
+
+}
+
+.allProduct p {
+    font-size:15px;
+    font-weight:300;
+    letter-spacing:-0.025em;
+    margin-bottom:30px;
+}
+
+
+.allProduct .container {
+    width:1200px;
+    margin:0 auto;
+}
+
+.allProduct .aproductSlide figure {
+    padding:0 15px;
+
+}
+
+
+.allProduct .inner {
+    margin-bottom:20px;
+
+}
+
+.allProduct figure img {
+    transform:scale(0.9);
+    transition:0.5s;
+
+}
+
+.allProduct figure.slick-center img{
+    transform:scale(1.0);
+}
+
+
+.allProduct .inner+strong {
+
+    display:block;
+    margin-bottom:20px;
+    font-size:13px;
+    font-weight:300;
+}
+
+.allProduct .slick-dots {
+    display:flex;
+    gap:10px;
+    justify-content:center;
+}
+
+.allProduct .slick-dots li {
+    width:13px;
+    height:13px;
+    background:#333;
+    border-radius:50%;
+}
+
+.allProduct .slick-dots li.slick-active {
+    background:#f00;
+}
+
+.allProduct .slick-dots li button {
+    display:none;
+}
+
+.allProduct i {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:10px;
+    font-size:30px;
+    color:#fff;
+    background:#333;
+    
+}
+
+.allProduct i:first-child {
+    margin-left:-700px;
+}
+
+.allProduct i:last-child {
+    margin-left:700px;
+}
+

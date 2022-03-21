@@ -76,8 +76,35 @@ $(function(){
     
 
     ////////////////////////////// 
-    
+    // 유튜브 플레이어를 쓰는 방법
+    $("#bgndVideo").YTPlayer({
+      videoURL:'https://youtu.be/TqFLIZG_aXA',
+      containment:'.movieBg',
+      autoPlay:true, 
+      mute:true, 
+      startAt:0, 
+      opacity:1,
+      showControls:false,
+      playOnlyIfVisible:true,  //내가 볼때 재생하기//
+    }); 
+
+   $('.movieBg i:first-child').on('click', function(){
+        $("#bgndVideo").YTPPause();
+   });
+
+   $('.movieBg i:last-child').on('click', function(){
+        $("#bgndVideo").YTPPlay();
+   });
+
+  
+   $('.tapMenu li').on('click', function(){
+        
+        var idx = $(this).index();
+        $(this).addClass("oo").siblings().removeClass("oo");
+        $('.tapContent>div').eq(idx).addClass("oo").siblings().removeClass("oo");
+   });
 
 
 
 })
+

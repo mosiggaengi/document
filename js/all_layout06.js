@@ -86,6 +86,7 @@ $(function(){
       opacity:1,
       showControls:false,
       playOnlyIfVisible:true,  //내가 볼때 재생하기//
+      startAt:9,
     }); 
 
    $('.movieBg i:first-child').on('click', function(){
@@ -104,7 +105,23 @@ $(function(){
         $('.tapContent>div').eq(idx).addClass("oo").siblings().removeClass("oo");
    });
 
+  $('#link').on('change', function(){
+        let linkSite = $(this).val();
+        if (!linkSite) return;
+        window.open(linkSite)
+  })
+
+
+   $('.popup01 button').on('click',function(){
+        $(this).parent().hide();
+   });
+   
 
 
 })
+
+// nth child 1 = index 0
+//$(this).index(번호)
+// .eq = 몇 번째 자식
+// siblings 나를 제외한 모든 자식
 

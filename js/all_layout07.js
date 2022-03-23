@@ -78,7 +78,7 @@ $(function(){
     ////////////////////////////// 
     // 유튜브 플레이어를 쓰는 방법
     $("#bgndVideo").YTPlayer({
-      videoURL:'https://youtu.be/TqFLIZG_aXA',
+      videoURL:'https://youtu.be/vQXvyV0zIP4',
       containment:'.movieBg',
       autoPlay:true, 
       mute:true, 
@@ -115,24 +115,6 @@ $(function(){
    $('.popup01 button').on('click',function(){
         $(this).parent().hide();
    });
-
-   $('.toTop').on('click', function () {
-        $('html,body').animate({
-          scrollTop:0
-        }, 400);
-        return false;
-   });
-
-   $(window).on('scroll', function () {
-        let sct = $(window).scrollTop();
-        console.log(sct);
-        if (sct > 500) {
-            $('.toTop').fadeIn(500);
-        }else {
-            $('.toTop').fadeOut(500);
-        }
-        
-   })
    
 
 

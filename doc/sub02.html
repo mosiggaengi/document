@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본으로 돌아가기 02</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        .Wrap {}
+
+        header, 
+        footer {
+            height:100px;
+            background:#555;
+            color:#fff;
+            text-align:center;
+            line-height:100px;
+        }
+
+        article {
+            min-height:500px;
+            letter-spacing:-0.025em;
+        }
+
+        .subPage .infomation {
+            padding:100px 0;
+        }
+
+        .subPage .infomation h2 {
+            font-size:30px;
+            font-weight:700;
+            text-align:center;
+        }
+
+        .subPage .infomation h2::after {
+            content:"";
+            display:block;
+            width:40px;
+            height:2px;
+            background:#333;
+            margin:15px auto;
+
+        }
+
+        .subPage .infomation>p {
+            text-align:center;
+            font-size:15px;
+            font-weight:300;
+            margin-bottom:40px;
+        }
+
+        .subPage .infomation .container {
+            display:flex;
+            flex-wrap: wrap;
+            width:1200px;
+            margin:0 auto;
+        }
+
+        .subPage .infomation .container figure {
+            width:100%;
+            margin-bottom:40px;
+            padding:0 15px;
+        }
+
+        .subPage .infomation .container .left {
+            width:35%;
+            padding:0 15px;
+        }
+
+        .subPage .infomation .container .left h3 {
+            text-align:center;
+            font-size:19px;
+            font-weight:500;
+            line-height:1.4;
+        }
+
+        .subPage .infomation .container .left h3::after {
+            content:"";
+            display:block;
+            width:1px;
+            height:150px;
+            background:#333;
+            margin:30px auto;
+        }
+
+
+        .subPage .infomation .container .right {
+            width:65%;
+            padding:0 15px;
+            font-weight:300;
+            line-height:1.4;
+        }
+
+        .subPage .infomation .container .right strong {
+            display:block;
+            font-weight:700;
+            margin-bottom:40px;
+        }
+    </style>
+</head>
+<body>
+<div class="Wrap">
+    <header>
+        header
+    </header>
+
+
+
+    <article class="subPage">
+        <section class="infomation">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque alias beatae dolore autem aspernatur!</p>
+            <div class="container">
+                <figure>
+                    <img src="../images/mainVisual_05.png" alt="">
+                </figure>
+                <div class="left">
+                    <h3>Lorem, ipsum dolor sit amet consectetur <br>
+                        adipisicing elit.</h3>
+                </div>
+                <div class="right">
+                    <p>
+                        <strong>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+                            Rerum ratione enim saepe! Tempore animi non ipsum.
+                        </strong>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                        Provident facere, ex aliquid fugiat enim obcaecati modi corrupti, nihil dicta delectus voluptates eveniet tenetur voluptatem, 
+                        <br><br>
+                        laboriosam sunt qui. Eaque est excepturi, nisi voluptatem distinctio, 
+                        <br><br><br>
+                        <strong>
+                            optio asperiores expedita sequi quidem similique consectetur?
+                        </strong>
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+
+    <footer>
+        &copy; mosiggaeng
+    </footer>
+</div>
+</body>
+</html>

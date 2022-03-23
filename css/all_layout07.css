@@ -4,7 +4,8 @@
 
 .topBanner {
     padding: 24px 0;
-    background: #f3f3f3;
+    background: #369;
+    color: #fff;
 }
 
 .topBanner .container {
@@ -31,7 +32,7 @@
 .topBanner .container a {
     margin-left: 20px;
     padding: 5px 20px;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     font-size: 13px;
     font-weight: 300;
 }
@@ -58,6 +59,10 @@
     line-height: 100px;
 }
 
+.headerWrap .container img {
+    width: 150px;
+}
+
 .headerWrap .container>* {
     padding: 0 15px;
 }
@@ -73,6 +78,7 @@
 
 .gnb>ul {
     display: flex;
+    text-transform: uppercase;
 }
 
 .gnb>ul>li {
@@ -156,7 +162,7 @@
 
 .mainVisual .mainSlide figure.oo i {
     opacity: 1;
-    animation: heart 1s infinite;
+    animation: heart 3s infinite;
 }
 
 @keyframes heart {
@@ -185,16 +191,15 @@
     position: absolute;
     top: 50%;
     left: 100px;
-
+    width: 100px;
+    height: 100px;
     z-index: 999;
-    border-top: 100px solid #fff;
-    border-left: 100px solid transparent;
-    transform: translateY(-50%) rotate(-135deg);
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: translateY(-50%) rotate(-45deg);
 }
 
-.mainVisual .mainSlide .leftArrow.oo {
-    border-top: 100px solid #333;
-}
+
 
 
 .mainVisual .mainSlide .rightArrow {
@@ -217,9 +222,7 @@
 
 }
 
-.mainVisual .mainSlide figure.itm02 .inner {
-    color: #333;
-}
+.mainVisual .mainSlide figure.itm02 .inner {}
 
 .mainVisual .mainSlide figure .inner h3 {
     opacity: 0;
@@ -254,15 +257,15 @@
 
 
 .mainVisual .mainSlide .itm01 {
-    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+    background: url(../images/mainVisual_01.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .mainSlide .itm02 {
-    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+    background: url(../images/mainVisual_02.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .mainSlide .itm03 {
-    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+    background: url(../images/mainVisual_03.jpg) no-repeat center center/cover;
 }
 
 
@@ -400,7 +403,7 @@
 
 .eventBanner {
     padding: 100px 0;
-    background: url(../images/mainvisual01.jpg) no-repeat fixed center center/cover;
+    background: url(../images/mainVisual_05.png) no-repeat fixed center center/cover;
     text-align: center;
     color: #fff;
     filter: grayscale(1);
@@ -656,8 +659,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #9acd32;
-    border: 3px solid #9acd32;
+    background: #369;
+    border: 3px solid #369;
     padding: 15px 30px;
     border-radius: 10px;
     color: #fff;
@@ -667,9 +670,9 @@
 
 .customerArea .container>div .btn:hover {
     background: #fff;
-    border: 3px solid #9acd32;
+    border: 3px solid #369;
     border-radius: 30px;
-    color: #9acd32;
+    color: #369;
 }
 
 .customerArea .container>div img {
@@ -863,21 +866,4 @@
     color: #fff;
     text-transform: uppercase;
     font-size: 14px;
-}
-
-.toTop {
-    position: fixed;
-    inset: auto 50px 100px auto;
-    display: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-
-}
-
-.toTop i {
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    font-size: 20px;
 }
